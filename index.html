@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunSeat - Smart Travel Seating</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        header { background: linear-gradient(135deg, #FF9500 0%, #FF6B00 100%); color: white; padding: 4rem 2rem; text-align: center; }
+        header h1 { font-size: 3rem; margin-bottom: 1rem; }
+        header p { font-size: 1.3rem; opacity: 0.95; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .feature { background: #f8f9fa; padding: 2rem; border-radius: 12px; text-align: center; }
+        .feature h3 { color: #FF9500; margin-bottom: 1rem; font-size: 1.4rem; }
+        .permissions { background: #fff3e0; padding: 2rem; border-radius: 12px; margin: 3rem 0; }
+        .permissions h2 { color: #e65100; margin-bottom: 1rem; }
+        .permissions ul { list-style: none; padding-left: 0; }
+        .permissions li { padding: 0.5rem 0; padding-left: 1.5rem; position: relative; }
+        .permissions li:before { content: "✓"; position: absolute; left: 0; color: #FF9500; font-weight: bold; }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+        footer a { color: #FF9500; text-decoration: none; }
+        .cta { display: inline-block; background: #FF9500; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>☀️ SunSeat</h1>
+        <p>Travel Smarter. Sit Better. Avoid the Sun.</p>
+        <a href="#download" class="cta">Download Now</a>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About SunSeat</h2>
+            <p>SunSeat is an intelligent travel companion that helps you choose the best seat in your vehicle to minimize sun exposure during your journey. Using advanced sun position calculations and real-time route analysis, SunSeat ensures you travel in comfort.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>🌅 Smart Sun Analysis</h3>
+                <p>Calculates sun position based on your route, time, and location using precise astronomical algorithms.</p>
+            </div>
+            <div class="feature">
+                <h3>🗺️ Route Planning</h3>
+                <p>Integrates with OpenRouteService for accurate directions and journey time estimation.</p>
+            </div>
+            <div class="feature">
+                <h3>📍 Current Location</h3>
+                <p>Quickly set your starting point using GPS with a single tap.</p>
+            </div>
+            <div class="feature">
+                <h3>⏰ Flexible Scheduling</h3>
+                <p>Plan trips for any date and time to get accurate sun predictions.</p>
+            </div>
+            <div class="feature">
+                <h3>🚗 Vehicle Oriented</h3>
+                <p>Recommendations based on vehicle heading and sun relative position.</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Clear Results</h3>
+                <p>Visual breakdown of sun exposure percentages with confidence ratings.</p>
+            </div>
+        </section>
+
+        <section class="permissions">
+            <h2>App Permissions</h2>
+            <p>SunSeat requires the following permissions to function properly:</p>
+            <ul>
+                <li><strong>Location (Fine & Coarse):</strong> Used to determine your current position for route planning and sun position calculations at your location.</li>
+                <li><strong>Internet Access:</strong> Required to fetch route data and geocoding information from OpenRouteService.</li>
+            </ul>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Your location data is processed locally on your device and is not stored or shared with third parties.</p>
+        </section>
+
+        <section id="download">
+            <h2>Get SunSeat</h2>
+            <p>Available on Android. Download now and travel in comfort!</p>
+            <a href="#" class="cta">Get it on Google Play</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>Developed by <strong>Scholarship</strong></p>
+        <p>&copy; 2026 SunSeat. All rights reserved.</p>
+        <p><a href="privacy_policy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
